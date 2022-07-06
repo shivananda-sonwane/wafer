@@ -13,3 +13,4 @@ flask_cors
 mysql-connector-python
 mysql-connector
 imblearn
+sqlalchemy
