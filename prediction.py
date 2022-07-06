@@ -13,7 +13,7 @@ class prediction:
         text=path.encode('unicode_escape').decode("ASCII").replace("\\\\","/").replace("\\","/")
         text=text.replace("x0c","f")
 
-        for files in os.listdir("/".join(text.split("/")[:len(text.split("/"))])):
+        for files in os.listdir("/".join(text.split("/")[:len(text.split("/"))])+"/"):
             df=pd.read_csv("/".join(text.split("/")[:len(text.split("/"))])+"/"+files)
             df=df.fillna(0)
             scaler=pickle.load(file=open("/".join(text.split("/")[:text.split("/").index("Training_files")])+"/model/"+"scaler.pkl","rb"))
