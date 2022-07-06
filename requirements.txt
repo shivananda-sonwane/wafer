@@ -1,0 +1,12 @@
+pandas
+numpy
+seaborn
+matplotlib
+flask
+kneed
+sklearn
+dvc
+flask_cors
+mysql-connector-python
+mysql-connector
+imblearn

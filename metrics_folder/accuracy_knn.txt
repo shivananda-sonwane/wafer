@@ -1,0 +1,1 @@
+knn metrics{'precision': 0.83, 'accuracy': 0.91, 'recall': 1.0, 'specificity': 0.85, 'f1': 0.91}auc score is 0.9253945480631277---END---

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>Wafer Fault Detection Page</h1>
+
+<h3>Choose the folder to do prediction</h3>
+<form action="/predict">
+  <label for="folder">Select a file:</label>
+  <input type="file" id="folder" name="folder" webkitdirectory multiple/><br><br>
+  <input type="submit">
+</form>
+
+<h3>Select the Folder to do training</h3>
+<form action="/train">
+
+  <label for="folder">Select files:</label>
+  <input type="file" id="folder" name="folder" webkitdirectory multiple/><br><br>
+  <input type="submit">
+</form>
+{{prediction}}
+</body>
+</html>
+
+        

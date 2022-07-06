@@ -1,0 +1,1 @@
+Logistics Regression metrics{'precision': 0.97, 'accuracy': 0.99, 'recall': 1.0, 'specificity': 0.98, 'f1': 0.98}auc score is 0.9879356568364611---END---

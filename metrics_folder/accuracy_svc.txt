@@ -1,0 +1,1 @@
+svc metrics{'precision': 0.92, 'accuracy': 0.96, 'recall': 1.0, 'specificity': 0.94, 'f1': 0.96}auc score is 0.9677187948350071---END---
