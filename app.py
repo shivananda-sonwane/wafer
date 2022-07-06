@@ -16,12 +16,12 @@ warnings.filterwarnings("ignore")
 
 app=Flask(__name__,template_folder="templates")
 
-@app.route("/",methods=["GET","POST"])
+@app.route("/",methods=["POST","GET"])
 def home():
     return render_template("index.html")
 
 
-@app.route("/train",methods=["GET","POST"])
+@app.route("/train",methods=["POST"])
 def train_route():
     #getting the path from the client
     path=request.form.get("paths")
@@ -40,7 +40,7 @@ def train_route():
     ans=train.train_do()
     return ans
 
-@app.route("/predict",methods=["GET","POST"])
+@app.route("/predict",methods=["POST"])
 def predict_route():
     #getting the path from the client for prediction
     path=request.form.get("pred_folder")
