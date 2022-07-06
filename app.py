@@ -1,4 +1,3 @@
-
 from wsgiref import simple_server
 from flask import Flask,Blueprint,request, render_template
 from flask import Response
@@ -22,7 +21,7 @@ def home():
     return render_template("index.html")
 
 
-@app.route("/train",methods=["POST"])
+@app.route("/train",methods=["GET","POST"])
 def train_route():
     #getting the path from the client
     path=request.form.get("paths")
@@ -41,7 +40,7 @@ def train_route():
     ans=train.train_do()
     return ans
 
-@app.route("/predict",methods=["POST"])
+@app.route("/predict",methods=["GET","POST"])
 def predict_route():
     #getting the path from the client for prediction
     path=request.form.get("pred_folder")
